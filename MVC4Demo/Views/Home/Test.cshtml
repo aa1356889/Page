@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Test</title>
+    <link href="~/js/kkpager_blue.css" rel="stylesheet" />
+    <script src="~/js/jquery-1.10.2.min.js"></script>
+    <script src="~/js/kkpager.min.js"></script>
+</head>
+<body>
+    <div id="bb" class="kkpager">
+        ff
+    </div>
+    <div id="aa" class="kkpager"></div>
+</body>
+</html>
+<script type="text/javascript">
+
+    $(function () {
+        var kp1 = new kkpager(1, 50, "bb", function (n) { alert(n)});
+        kp1.generPageHtml();
+        var kp2 = new kkpager(1, 50, "aa", function (n) { alert(n)});
+        kp2.generPageHtml();
+    })
+</script>

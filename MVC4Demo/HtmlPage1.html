@@ -1,0 +1,22 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script type="text/javascript">
+
+        var event = new EventSource("/home/Connection", { withCredebtuals: true });
+        alert(event);
+        event.onmessage = function (e) {
+            console.log(e.data);
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
